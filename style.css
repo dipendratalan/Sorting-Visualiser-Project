@@ -1,0 +1,182 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav {
+  background-color: #3b3a3a;
+  color: white;
+  /* display: -ms-grid; */
+  display: grid;
+  /* -ms-grid-columns: 30% 60%; */
+      grid-template-columns: 30% 60%;
+  -webkit-column-gap: 10%;
+          column-gap: 10%;
+  padding: 0% 5%;
+}
+
+nav .array-inputs {
+  /* display: -ms-grid; */
+  display: grid;
+  /* -ms-grid-columns: 60% 40%; */
+      grid-template-columns: 60% 40%;
+  place-content: center;
+  padding: 5% 0%;
+}
+
+nav .array-inputs #a_size {
+  padding: 5% 0%;
+}
+
+nav .array-inputs #a_speed {
+  padding: 5% 0%;
+}
+
+nav .array-inputs #a_generate {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 4% 0% 0% 0%;
+  padding-left: 20%;
+}
+
+
+
+/* it specifies that these styles should apply when the element is in a "hover" state,
+ meaning when a user's cursor is positioned over it. */
+nav .array-inputs #a_generate:hover {
+  cursor: pointer;
+  /* In this case, it changes the cursor to a pointer, typically represented as a small hand icon.
+   This is a visual indicator to the user that the element is clickable or interactive. */
+}
+
+
+
+
+ /*nav .header_right This is a CSS rule selector. It targets elements with the class "header_right" that are descendants of "nav" elements.
+  It applies styles to these selected elements.  */
+  nav .header_right {
+  /* display: -webkit-box; */
+  /* display: -ms-flexbox; */
+  display: flex;
+  /* This property sets the CSS display property for the selected elements to "flex."
+   It's a modern layout system used for creating flexible box layouts in CSS.
+   It's supported in most modern web browsers. */
+
+  /* -webkit-box-orient: vertical; */
+  /* -webkit-box-direction: normal; */
+      /* -ms-flex-direction: column; */
+          flex-direction: column;
+/* This property sets the direction of the flexible box layout to "column." 
+It's a modern CSS property that aligns with the CSS Flexbox specification,
+ and it also controls the stacking of child elements vertically. */
+          
+}
+
+
+
+/* This is a CSS rule selector. It targets elements with the class "nav-heading" 
+that are descendants of elements with the class "header_right," which, in turn, are descendants of "nav" elements. */
+nav .header_right .nav-heading {
+  display: inline-block;
+  font-size: xxx-large;
+  padding: 3% 0%;
+}
+
+nav .header_right .algos {
+  /* display: -ms-grid; */ /*commented here*/
+  display: grid;
+  /* -ms-grid-columns: (16.66667%)[6]; */ /*commented here*/
+      grid-template-columns: repeat(6, 16.66667%);
+  place-content: center;
+  padding: 2% 0%;
+}
+
+nav .header_right .algos button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  padding: 5% 0%;
+  font-size: x-large;
+}
+
+nav .header_right .algos button:hover {
+  background-color: blue;
+  cursor: pointer;
+}
+
+nav .header_right .algos .butt_locked {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+nav .header_right .algos .butt_locked:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+nav .header_right .algos .butt_selected {
+  background-color: white;
+  color: green;
+}
+
+nav .header_right .algos .butt_selected:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+nav .header_right .algos .butt_unselected:hover {
+  background-color: blue;
+  cursor: pointer;
+}
+
+section {
+  /* display: -ms-grid; */
+  display: grid;
+  /* -ms-grid-columns: 20% 60% 20%; */
+      grid-template-columns: 20% 60% 20%;
+}
+
+section #Info_Cont1 {
+  padding: 20%;
+}
+
+section #array_container {
+  /* display: -webkit-box; */
+  /* display: -ms-flexbox; */
+  display: flex;
+  width: 100%;
+  height: 70vh;
+}
+
+section #Info_Cont2 {
+  padding: 20%;
+}
+
+.hide {
+  display: none;
+}
+
+/*
+@media (max-width: 480px)//Mobiles
+{
+    
+}
+
+@media (min-width: 481px) and (max-width: 1250px)//Tablets
+{
+
+}
+
+@media (min-width: 1251px)//Laptops and up
+{
+
+}
+*/

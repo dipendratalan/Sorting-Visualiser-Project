@@ -1,2 +1,3 @@
-# Sorting-Visualiser-Project
-created a sorting visualiser helping in visualising the sorting process to the students.
+# Sorting_Visualizer
+
+This project is a Web Visualization tool for sorting algorithms.
